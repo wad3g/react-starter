@@ -25,6 +25,6 @@ export const Title = styled.h1`
   font-size: 1.5em;
 `;
 
-export const Intro = styled.p`
+export const Intro = styled.div`
   font-size: large;
 `;
