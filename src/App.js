@@ -50,7 +50,7 @@ class App extends Component {
               <Route exact path="/" render={() => <Redirect to="/dashboard" />} />
               <Route path="/dashboard" component={DashboardPage} />
               <Route path="/other" component={ExampleOtherPage} />
-              <Route page="missing" component={FourOhFourPage} />
+              <Route component={FourOhFourPage} />
             </Switch>
           </ConnectedRouter>
         </Root>
