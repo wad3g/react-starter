@@ -3,12 +3,9 @@ import { routerMiddleware } from 'react-router-redux';
 import createSagaMiddleware from 'redux-saga';
 import history from 'history/createHashHistory';
 
+import injections from './injections';
 import rootReducer from './reducers';
 import rootSaga from './sagas';
-
-const injections = {
-  logger: window.console,
-};
 
 const sagaMiddleware = createSagaMiddleware();
 

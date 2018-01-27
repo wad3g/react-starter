@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { injectGlobal, keyframes } from 'styled-components';
 
 const logoSpin = keyframes`
   from { transform: rotate(0deg); }
@@ -16,7 +16,6 @@ export const Logo = styled.img`
 
 export const Header = styled.header`
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 `;
@@ -25,6 +24,27 @@ export const Title = styled.h1`
   font-size: 1.5em;
 `;
 
-export const Intro = styled.div`
+export const PageWrapper = styled.div`
   font-size: large;
+  padding-top: 15px;
 `;
+
+// native fonts
+const font = `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif`;
+
+export const setGlobalStyles = () => {
+  injectGlobal`
+    body {
+      font-family: ${font};
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  `;
+};

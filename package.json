@@ -6,19 +6,19 @@
     "classnames": "2.2.5",
     "history": "4.7.2",
     "husky": "0.14.3",
-    "lint-staged": "6.0.0",
+    "lint-staged": "6.0.1",
     "lodash": "4.17.4",
-    "prettier": "1.9.2",
+    "prettier": "1.10.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-redux": "5.0.6",
     "react-router": "4.2.0",
     "react-router-dom": "4.2.2",
     "react-router-redux": "5.0.0-alpha.9",
-    "react-scripts": "1.0.17",
+    "react-scripts": "1.1.0",
     "redux": "3.7.2",
     "redux-saga": "0.16.0",
-    "styled-components": "2.4.0"
+    "styled-components": "3.0.2"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -32,6 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test:debug:chrome": "react-scripts --inspect-brk test --runInBand --env=jsdom",
+    "update-deps": "yarn upgrade-interactive --latest",
     "eject": "react-scripts eject"
-  }
+  },
+  "devDependencies": {}
 }
