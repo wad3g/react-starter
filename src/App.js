@@ -3,14 +3,15 @@ import { Provider } from 'react-redux';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 
-import DashboardPage from './pages/dashboard';
-import ExampleOtherPage from './pages/other';
+import DashboardPage from './pages/Dashboard';
+import ExampleOtherPage from './pages/Other';
 import FourOhFourPage from './pages/404';
+
+import Header from './components/Header';
 
 import configureStore from './store';
 import injections from './injections';
-import logo from './logo.svg';
-import { setGlobalStyles, Root, Logo, Header, Title } from './styles';
+import { setGlobalStyles, Root } from './styles';
 
 const store = configureStore();
 const history = injections.createHistory();
@@ -24,10 +25,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Root>
-          <Header>
-            <Logo src={logo} alt="logo" />
-            <Title>Welcome to React</Title>
-          </Header>
+          <Header />
           <ConnectedRouter history={history}>
             <Switch>
               <Route exact path="/" render={() => <Redirect to="/dashboard" />} />

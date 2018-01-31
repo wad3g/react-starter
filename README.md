@@ -5,6 +5,7 @@ Added:
 - Prettier
 - React Router
 - Redux, redux-saga, react-redux, react-router-redux
+- Styleguidist
 - VSCode config for debugging
 
 Below you will find some information on how to perform common tasks.<br>

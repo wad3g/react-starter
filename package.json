@@ -1,5 +1,5 @@
 {
-  "name": "react-starter-2",
+  "name": "react-starter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,10 +30,14 @@
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",    
     "test": "react-scripts test --env=jsdom",
     "test:debug:chrome": "react-scripts --inspect-brk test --runInBand --env=jsdom",
     "update-deps": "yarn upgrade-interactive --latest",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "react-styleguidist": "6.2.1"
+  }
 }
